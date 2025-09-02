@@ -52,6 +52,8 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'zimbabwe-red': 'hsl(var(--zimbabwe-red))',
+				'corporate-navy': 'hsl(var(--corporate-navy))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
