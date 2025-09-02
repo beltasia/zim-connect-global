@@ -96,7 +96,15 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="group/btn">
+                  <Button 
+                    variant="outline" 
+                    className="group/btn"
+                    onClick={() => {
+                      document.getElementById('contact')?.scrollIntoView({ 
+                        behavior: 'smooth' 
+                      });
+                    }}
+                  >
                     Learn More
                     <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                   </Button>

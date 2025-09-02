@@ -42,7 +42,15 @@ const Header = () => {
               <Phone className="w-4 h-4" />
               <span>+263 4 123 4567</span>
             </div>
-            <Button variant="hero" size="sm">
+            <Button 
+              variant="hero" 
+              size="sm"
+              onClick={() => {
+                document.getElementById('contact')?.scrollIntoView({ 
+                  behavior: 'smooth' 
+                });
+              }}
+            >
               Get Quote
             </Button>
           </div>
@@ -79,7 +87,17 @@ const Header = () => {
                   <Phone className="w-4 h-4" />
                   <span>+263 4 123 4567</span>
                 </div>
-                <Button variant="hero" size="sm" className="w-full">
+                <Button 
+                  variant="hero" 
+                  size="sm" 
+                  className="w-full"
+                  onClick={() => {
+                    document.getElementById('contact')?.scrollIntoView({ 
+                      behavior: 'smooth' 
+                    });
+                    setIsMenuOpen(false);
+                  }}
+                >
                   Get Quote
                 </Button>
               </div>
